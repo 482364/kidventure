@@ -1,0 +1,245 @@
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Books</title>
+    <link rel="icon" type="image/x-icon" href="logo3.png">
+</head>
+
+<style>
+
+body {
+  background-image: url("bookbg.jpeg");
+  font-family: 'Comic Sans MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.menu-bar
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    background: #98D8EF;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.logo
+{
+    width: 50%;
+}
+.id
+{
+    width: 4%;
+}
+.menu-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: #000957;
+}
+.menu-bar ul li
+{
+    list-style: none;
+    display: inline-block;
+    margin: 15px;
+    position: sticky;
+}
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color: #000957;
+    text-transform: uppercase;
+}
+.menu-bar ul li::after
+{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #E8F9FF;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.menu-bar ul li:hover::after
+{
+    width: 100%;
+}
+
+header 
+{
+  background-color: brown;
+  color: white;
+  padding: 10px 0;
+  font-size: 30px;
+  font-weight: bold;
+  border-bottom: 5px solid #FFF574;
+  margin-top: 85px;
+}
+
+.book-section 
+{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 10px;
+}
+
+.book-thumbnail 
+{
+  width: 350px;
+  height: 430px;
+  background-color: black;
+  border: 3px solid white; 
+  border-radius: 0px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.book-thumbnail:hover 
+{
+  transform: scale(1.1) rotate(2deg);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.book-thumbnail img 
+{
+  width: 350px;
+  height: 430px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.book-thumbnail:hover img 
+{
+  opacity: 0.8;
+}
+
+.book-thumbnail::before 
+{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: #fff;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.book-thumbnail:hover::before 
+{
+  opacity: 1;
+  content: 'READ';
+}
+
+h2 
+{
+   color: #FFF574;
+   font-size: 36px;
+   margin-top: 20px;
+}
+
+footer 
+{
+   background-color: brown;
+   color: white;
+   text-align: center;
+   padding: 20px;
+   position: relative;
+   bottom: 0;
+   width: 100%;
+}
+
+footer p 
+{
+   font-size: 15px;
+   margin: 0;
+}
+</style>
+
+
+<body>
+    <div class="menu-bar">
+      <a href="index.html">
+      <img src="logo2.png" class="logo">
+      </a>
+      <ul>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="game.html">Games</a></li>
+        <li><a href="video.html">Videos</a></li>
+        <li><a href="book.html">Books</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <img src="id.png" class="id">
+    </div>
+<header>
+    <h1>Fun Books</h1>
+</header>
+
+<h2>Click on a book to read!</h2>
+
+<section class="book-section">
+    <div class="book-thumbnail" onclick="openbook('file:///C:/Users/Acer/AppData/Local/Microsoft/Windows/INetCache/IE/QECW9943/Where%20is%20My%20Cat_[1].pdf')">
+        <img src="book1.png" alt="book 1">
+    </div>
+    <div class="book-thumbnail" onclick="openbook('https://online.fliphtml5.com/kikwj/wgtc/#p=1')">
+        <img src="book2.png" alt="book 2">
+    </div>
+    <div class="book-thumbnail" onclick="openbook('https://www.starfall.com/h/talking-library/gingerbread-boy/?sn=talking-library')">
+        <img src="book3.png" alt="book 3">
+    </div>
+    <div class="book-thumbnail" onclick="openbook('https://www.starfall.com/h/talking-library/two-engines/?sn=talking-library')">
+        <img src="book4.png" alt="book 4">
+    </div>
+    <div class="book-thumbnail" onclick="openbook('https://www.starfall.com/h/talking-library/shakespeare/?sn=talking-library')">
+        <img src="book5.png" alt="book 5">
+    </div>
+    <div class="book-thumbnail" onclick="openbook('https://www.starfall.com/h/talking-library/goldilocks/?sn=talking-library')">
+        <img src="book6.png" alt="book 6">
+    </div>
+    <div class="book-thumbnail" onclick="openbook('https://www.starfall.com/h/talking-library/excavator/?sn=talking-library')">
+        <img src="book7.png" alt="book 7">
+    </div>
+    <div class="book-thumbnail" onclick="openbook('https://www.starfall.com/h/talking-library/dolphins-not-fish/?sn=talking-library')">
+        <img src="book8.png" alt="book 8">
+    </div>
+    <div class="book-thumbnail" onclick="openbook('https://www.starfall.com/h/talking-library/bpb-learns-rules/?sn=talking-library')">
+        <img src="book9.png" alt="book 9">
+    </div>
+    <div class="book-thumbnail" onclick="openbook('https://www.starfall.com/h/talking-library/dinosaurs/?sn=talking-library')">
+        <img src="book10.png" alt="book 10">
+    </div>
+    <div class="book-thumbnail" onclick="openbook('https://www.starfall.com/h/talking-library/humpback-whales/?sn=talking-library')">
+        <img src="book11.png" alt="book 10">
+    </div>
+    <div class="book-thumbnail" onclick="openbook('https://fliphtml5.com/kipuk/crxq/basic')">
+        <img src="book12.png" alt="book 10">
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Kidventure.com All Rights Reserved.</p>
+</footer>
+
+<script>  
+function openbook(url) 
+{
+   window.open(url, '_blank');
+}
+</script>
+
+</body>
+</html>

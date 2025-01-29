@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="icon" type="image/x-icon" href="logo3.png">
+    <style>
+        body {
+            font-family: 'Comic Sans MS', sans-serif;
+            background-image: url(ab.jpg);
+            margin: 0;
+            padding: 0;
+            color: #243642;
+            text-align: center;
+            overflow-x: hidden;
+        }
+
+        .menu-bar
+        {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            margin: auto;
+            display: flex;
+            background: #98D8EF;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 1000;
+         }
+       .logo
+         {
+            width: 50%;
+         }
+       .id
+         {
+             width: 4%;
+         }
+       .menu-bar ul
+         {
+             display: inline-flex;
+             list-style: none;
+             color: #000957;
+         }
+       .menu-bar ul li
+         {
+             list-style: none;
+             display: inline-block;
+             margin: 15px;
+             position: sticky;
+          }
+       .menu-bar ul li a
+          {
+             text-decoration: none;
+             color: #000957;
+             text-transform: uppercase;
+          }
+      .menu-bar ul li::after
+          {
+             content: '';
+             height: 3px;
+             width: 0%;
+             background: #E8F9FF;
+             position: absolute;
+             left: 0;
+             bottom: -5px;
+             transition: 0.5s;
+           }
+       .menu-bar ul li:hover::after
+           {
+        width: 100%;
+           }
+
+        header {
+            background-color: #9ACBD0;
+            color: #243642;
+            padding: 30px 0;
+            font-size: 36px;
+            border-bottom: 5px solid #243642;
+            margin-top: 85px;
+        }
+
+        nav {
+            background-color: #48A6A7;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            background-color: #ffde00;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #C4D9FF;
+            transform: translateY(-5px);
+        }
+
+        section {
+            padding: 40px 10px;
+        }
+
+        h2 {
+            color: #000957;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        #team {
+            text-align: center;
+        }
+
+        .organization-chart {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .chart-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 120px;
+            text-align: center;
+        }
+
+        .chart-box img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+        }
+
+        .chart-box p {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .member-info {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .member-info div {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .member-info div:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .member-name {
+            font-size: 24px;
+            font-weight: bold;
+            color: #000957;
+        }
+
+        .position {
+            font-size: 18px;
+            color: #000957;
+        }
+
+        .contact-info {
+            font-size: 16px;
+            color: #000957;
+        }
+
+        .member-info div img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 3px solid #000957;
+        }
+
+        footer {
+            background-color: #9ACBD0;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .member-info {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-bar">
+      <a href="index.html">
+      <img src="logo2.png" class="logo">
+      </a>
+      <ul>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="game.html">Games</a></li>
+        <li><a href="video.html">Videos</a></li>
+        <li><a href="book.html">Books</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <img src="id.png" class="id">
+    </div>
+<header>
+    <h1>About Us</h1>
+</header>
+
+<nav>
+    <a href="#aboutus">About Us</a>
+    <a href="#vision">Our Vision</a>
+    <a href="#mission">Our Mission</a>
+    <a href="#team">Our Team</a>
+</nav>
+
+<section id="aboutus">
+    <h2>About us</h2>
+     <p style="text-align: justify;">Welcome to <strong>Kidventure.com</strong>, where we believe that every child deserves the best start to their educational journey. Our kindergarten program is designed to provide a safe, nurturing, and stimulating environment where young learners can grow, explore, and thrive.</p>
+    
+    <p style="text-align: justify;">At <strong>Kidventure.com</strong>, we embrace the idea that education is not just about academics but also about building life skills, emotional intelligence, and a strong sense of curiosity. We use a play-based learning approach, combining fun activities with meaningful lessons to ensure children are engaged and excited about discovering new things every day.</p>
+
+    <p>We focusing on critical areas such as:</p>
+    
+    <ul>
+        <li><strong>Language and Communication:</strong> Helping children express themselves confidently and develop early reading and writing skills.</li>
+        <li><strong>Cognitive Skills:</strong> Encouraging problem-solving, critical thinking, and creativity through hands-on activities.</li>
+        <li><strong>Social and Emotional Development:</strong> Building self-confidence, empathy, and teamwork through group interactions.</li>
+        <li><strong>Physical Growth:</strong> Promoting healthy habits and motor skills through outdoor play and physical activities.</li>
+    </ul>
+
+    <p style="text-align: justify;">Together, we aim to create a foundation for lifelong learning, helping every child develop the skills and mindset they need to succeed in the world. Join us on this exciting journey of discovery, growth, and joy!</p>
+</section>
+<br>
+   <hr style="border: 5px solid #243642;">
+
+<section id="vision">
+    <h2>Our Vision</h2>
+    <p>Our vision is to create a fun and safe learning environment where every child can grow, explore, and discover new possibilities!</p>
+</section>
+
+   <hr style="border: 5px solid #243642;">
+
+<section id="mission">
+    <h2>Our Mission</h2>
+    <p>Our mission is to provide quality education that focuses on creativity, teamwork, and emotional development in a supportive, joyful atmosphere.</p>
+</section>
+
+   <hr style="border: 5px solid #243642;">
+<section id="team">
+    <h2>Our Fun Team!</h2>
+    <div class="organization-chart">
+        <div class="chart-box">
+            <img src="aziz.jpeg" >
+            <p>Project Manager</p>
+        </div>
+        <div class="chart-box">
+            <img src="aisyah.jpg">
+            <p>Content Manager</p>
+        </div>
+        <div class="chart-box">
+            <img src="idayu.jpeg">
+            <p>Content Developer</p>
+        </div>
+        <div class="chart-box">
+            <img src="shila.jpeg">
+            <p>Editor</p>
+        </div>
+    </div>
+
+    <div class="member-info">
+        <div>
+            <img src="aziz.jpeg">
+            <div class="member-name">Abdul Aziz Bin Azman</div>
+            <div class="position">Project Manager</div>
+            <div class="contact-info">Phone: +60137569845 </div>
+            <div class="contact-info">Email: AzizAz2@gmail.com</div>
+            <p>Oversees the entire organization, ensuring that all teams work together toward shared goals. I responsible to make major decisions, manage resources, and set the vision and strategy for the organization.</p>
+        </div>
+        <div>
+            <img src="aisyah.jpg">
+            <div class="member-name">Aisyah Maisarah Binti Seliman</div>
+            <div class="position">Content Manager</div>
+            <div class="contact-info">Phone: +60179643522</div>
+            <div class="contact-info">Email: adeksarah@gmail.com</div>
+            <p>Responsible for planning, organizing, and ensuring projects are completed on    time. I have to coordinate between team members, manage timelines, and handle any challenges that arise during the project.</p>
+        </div>
+        <div>
+            <img src="idayu.jpeg">
+            <div class="member-name">Nurul Idayu Binti Ismail</div>
+            <div class="position">Content Developer</div>
+            <div class="contact-info">Phone:+60186478136</div>
+            <div class="contact-info">Email: idayaIsmail@gmail.com</div>
+            <p> In charge of creating engaging and meaningful content. I need to do some research, brainstorm ideas, to produce games, videos, or other materials that align with the organization's objectives.</p>
+        </div>
+ <div>
+            <img src="shila.jpeg">
+            <div class="member-name">Nurul Hashilah Binti Samari</div>
+            <div class="position">Editor</div>
+            <div class="contact-info">Phone: +60184361729</div>
+            <div class="contact-info">Email: shilorh211@gmail.com</div>
+            <p> Focuses on refining content, ensuring it is error-free and polished. I also need to maintain high-quality standards and align all materials with the organization's tone and style.</p>
+        </div>
+     </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Kidventure.com. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

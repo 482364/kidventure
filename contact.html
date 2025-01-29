@@ -1,0 +1,238 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="logo3.png">
+</head>
+
+<style>
+
+body
+{
+ background-image: url("ctcbg.jpg");
+ font-family: 'Comic Sans MS', sans-serif;
+}
+
+.menu-bar
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    background: #98D8EF;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.logo
+{
+    width: 50%;
+}
+.id
+{
+    width: 4%;
+}
+.menu-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: #000957;
+}
+.menu-bar ul li
+{
+    list-style: none;
+    display: inline-block;
+    margin: 15px;
+    position: sticky;
+}
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color: #000957;
+    text-transform: uppercase;
+}
+.menu-bar ul li::after
+{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #E8F9FF;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.menu-bar ul li:hover::after
+{
+    width: 100%;
+}
+
+footer
+{
+  background-color: #102C5;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  width: 100%px;
+  bottom: 0;
+  left: 0;
+  margin-top: 85px;
+}
+
+.contact-container
+{
+   width: 90%;
+   margin: 50px;
+   padding: 20px;
+   background-color: #624E88;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+       
+h2
+{
+   text-align: center;
+   color: #FFEB00;
+}
+        
+input, textarea 
+{
+   width: 100%;
+   padding: 10px;
+   margin: 10px 0;
+   border-radius: 4px;
+   border: 1px solid #ccc;
+   box-sizing: border-box;
+}
+        
+.submit 
+{
+   width: 100%;
+   padding: 10px;
+   background-color: #5CB338;
+   color: white;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+}
+        
+.submit:hover 
+{
+   background-color: #00712D;
+}
+        
+.message 
+{
+   color: green;
+   text-align: center;
+   display: none;
+
+}
+.socmed
+{
+    text-align: center;
+    margin-top: 20px;   
+}
+        
+.socmed a 
+{
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #E59BE9;
+}
+        
+.socmed a:hover 
+{
+    color: #DC0083;
+}
+
+
+</style>
+<body>
+    <div class="menu-bar">
+      <a href="index.html">
+      <img src="logo2.png" class="logo">
+      </a>
+      <ul>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="game.html">Games</a></li>
+        <li><a href="video.html">Videos</a></li>
+        <li><a href="book.html">Books</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <img src="id.png" class="id">
+    </div>
+
+<footer>
+<div class="contact-container">
+        <h2><b>Contact Kidventure</sup></b></h2>
+        <p><b>Lets us hear your suggestions!</b></p>
+        <form id="contactForm">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <br>
+            <br>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <br>
+            <br>
+            <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+        <div id="myBtnContainer">
+            <br>
+            <button class="submit">Send Message</button>
+        </div>
+        </form>
+        <br>
+        <div id="successMessage" class="message"><b>Thank you for your message!</b></div>
+
+<h2><b>Follow Kidventure</sub></b></h2>
+<div class="socmed" id="soc">
+    <a class="pinterest" href="https://www.pinterest.com/login/" target="_blank">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <i class="fa-brands fa-pinterest" aria-hidden="true"></i>
+    </a>
+ 
+
+  
+    <a class="twitter" href="https://x.com/login?" target="_blank">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <i class="fa-brands fa-twitter"></i>
+    </a>
+
+
+  
+    <a class="instagram" href="https://www.instagram.com/accounts/login/?hl=en" target="_blank">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+
+
+  
+    <a class="tiktok" href="https://www.tiktok.com/login" target="_blank">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <i class="fa-brands fa-tiktok"></i>
+    </a>
+</div>
+
+<p>&copy; 2025 Kidventure.com All rights reserved.</p>
+</footer>
+
+
+
+
+</body>
+</html>

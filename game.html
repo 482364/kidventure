@@ -1,0 +1,246 @@
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Games</title>
+   <link rel="icon" type="image/x-icon" href="logo3.png">
+
+</head>
+
+<style>
+
+body {
+  background-image: url("gamebg.jpeg");
+  font-family: 'Comic Sans MS', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+header 
+{
+  background-color: #B771E5;
+  color: white;
+  padding: 10px 0;
+  font-size: 30px;
+  font-weight: bold;
+  border-bottom: 5px solid #FFF574;
+  margin-top: 85px;
+}
+
+.menu-bar
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    background: #98D8EF;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.logo
+{
+    width: 50%;
+}
+.id
+{
+    width: 4%;
+}
+.menu-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: #000957;
+}
+.menu-bar ul li
+{
+    list-style: none;
+    display: inline-block;
+    margin: 15px;
+    position: sticky;
+}
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color: #000957;
+    text-transform: uppercase;
+}
+.menu-bar ul li::after
+{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #E8F9FF;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.menu-bar ul li:hover::after
+{
+    width: 100%;
+}
+
+.game-section 
+{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 10px;
+}
+
+.game-thumbnail 
+{
+  width: 390px;
+  height: 260px;
+  background-color: black;
+  border: 3px solid white; 
+  border-radius: 30px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.game-thumbnail:hover 
+{
+  transform: scale(1.1) rotate(2deg);
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.game-thumbnail img 
+{
+  width: 390px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.game-thumbnail:hover img 
+{
+  opacity: 0.8;
+}
+
+.game-thumbnail::before 
+{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: #fff;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.game-thumbnail:hover::before 
+{
+  opacity: 1;
+  content: 'PLAY';
+}
+
+h2 
+{
+   color: #4B164C;
+   font-size: 36px;
+   margin-top: 20px;
+}
+
+footer 
+{
+   background-color: #00712D;
+   color: white;
+   text-align: center;
+   padding: 20px;
+   position: relative;
+   bottom: 0;
+   width: 100%;
+}
+
+footer p 
+{
+   font-size: 15px;
+   margin: 0;
+}
+</style>
+
+
+<body>
+    <div class="menu-bar">
+      <a href="index.html">
+      <img src="logo2.png" class="logo">
+      </a>
+      <ul>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="game.html">Games</a></li>
+        <li><a href="video.html">Videos</a></li>
+        <li><a href="book.html">Books</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <img src="id.png" class="id">
+    </div>
+<header>
+    <h1>Fun Games</h1>
+</header>
+
+<h2>Click on a game to play!</h2>
+
+<section class="game-section">
+    <div class="game-thumbnail" onclick="openGame('https://www.starfall.com/h/addsub/addsub-ladder/?sn=math1--math0')">
+        <img src="game1.jpg" alt="Game 1">
+    </div>
+    <div class="game-thumbnail" onclick="openGame('https://www.starfall.com/h/numbers/coin-monkey/?sn=math1--math0')">
+        <img src="game2.jpg" alt="Game 2">
+    </div>
+    <div class="game-thumbnail" onclick="openGame('https://www.starfall.com/h/addsub/candy-machine/?sn=math1--math0')">
+        <img src="game3.jpg" alt="Game 3">
+    </div>
+    <div class="game-thumbnail" onclick="openGame('https://www.starfall.com/h/numbers/feed-animal/?sn=math0')">
+        <img src="game4.jpg" alt="Game 4">
+    </div>
+    <div class="game-thumbnail" onclick="openGame('https://www.starfall.com/h/numbers/greater-less-equals/?sn=math0')">
+        <img src="game5.jpg" alt="Game 5">
+    </div>
+    <div class="game-thumbnail" onclick="openGame('https://www.starfall.com/h/addsub/pop-bubbles/?sn=math0')">
+        <img src="game6.jpg" alt="Game 6">
+    </div>
+    <div class="game-thumbnail" onclick="openGame('https://www.starfall.com/h/numbers/balloon-count/?sn=math0')">
+        <img src="game7.jpg" alt="Game 7">
+    </div>
+    <div class="game-thumbnail" onclick="openGame('https://www.starfall.com/h/geometry/puzzles-easy/?mg=k')">
+        <img src="game8.jpg" alt="Game 8">
+    </div>
+    <div class="game-thumbnail" onclick="openGame('https://www.starfall.com/h/geometry/enviro-shapes/?mg=k')">
+        <img src="game9.jpg" alt="Game 9">
+    </div>
+    <div class="game-thumbnail" onclick="openGame('https://www.starfall.com/h/bpbbooks/puzzle-03-rainbow/?sn=bpbb-03-rainbow--bpbbooks')">
+        <img src="game10.jpg" alt="Game 10">
+    </div>
+    <div class="game-thumbnail" onclick="openGame('https://www.starfall.com/h/bpbbooks/puzzle-01-computer/?sn=bpbb-01-computer--bpbbooks')">
+        <img src="game11.jpg" alt="Game 10">
+    </div>
+    <div class="game-thumbnail" onclick="openGame('https://www.starfall.com/h/bpbbooks/puzzle-02-school/?sn=bpbb-02-school--bpbbooks')">
+        <img src="game12.jpg" alt="Game 10">
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Kidventure.com All Rights Reserved.</p>
+</footer>
+
+<script>  
+function openGame(url) 
+{
+   window.open(url, '_blank');
+}
+</script>
+
+</body>
+</html>
